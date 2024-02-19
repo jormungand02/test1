@@ -1,0 +1,2 @@
+set1 = {1, 2, 2, 3, 4, True, 'hello', None}
+print(set1)

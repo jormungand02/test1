@@ -1,0 +1,14 @@
+num1 = int(input('введите первое число:'))
+num2 = int(input('введите второе число:'))
+oper = input('Ведите операцию:')
+if oper == '+':
+    print(num1 + num2)
+elif oper == '-':
+    print(num1 - num2)
+elif oper =='*':
+    print(num1 * num2)
+elif oper == '/':
+    print(num1 / num2)
+else:
+    print('error')
+
