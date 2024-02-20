@@ -148,19 +148,111 @@
 
 
 
-SPL_Patrons = [
-['Kim Tremblay', 134],
-['Emily Wilson', 42],
-['Jessica Smith', 215],
-['Alex Roy', 151],
-['Sarah Khan', 105],
-['Samuel Lee', 220],
-['William Brown', 24],
-['Ayesha Qureshi', 199],
-['David Martin', 56],
-['Ajeet Patel',69]
-]
-readers = [i[1] * 11.95 for i in SPL_Patrons] 
-saved_amount = [round(i, 2) for i in readers]
-print(saved_amount)
+# SPL_Patrons = [
+# ['Kim Tremblay', 134],
+# ['Emily Wilson', 42],
+# ['Jessica Smith', 215],
+# ['Alex Roy', 151],
+# ['Sarah Khan', 105],
+# ['Samuel Lee', 220],
+# ['William Brown', 24],
+# ['Ayesha Qureshi', 199],
+# ['David Martin', 56],
+# ['Ajeet Patel',69]
+# ]
+
+# readers = [i[1] * 11.95 for i in SPL_Patrons] 
+# saved_amount = [round(i, 2) for i in readers]
+# print(saved_amount)
+
+
+
+# prairie_pirates = [
+# ['Tractor Jack', 1000, True],
+# ['Plowshare Pete', 950, False],
+# ['Prairie Lily', 245, True],
+# ['Red River Rosie', 350, True],
+# ['Mad Athabasca McArthur', 842, False],
+# ['Assiniboine Sally', 620, True],
+# ['Thresher Tom', 150, True],
+# ['Cranky Canola Carl', 499, False]
+# ]
+# list_ = [[i[0], i[1] * 42] for i in prairie_pirates if i[2] == True]
+# print(list_)
+
+
+
+# dict_ = {
+#     'Sasha': {
+#         'likes': 23,
+#         'comments': 2,
+#         'rating': 4
+#     },
+#     'Aliya': {
+#         'likes': 34,
+#         'comments': 5,
+#         'rating': 5
+#     },
+#     'Dasha': {
+#         'likes': 15,
+#         'comments': 3,
+#         'rating': 2
+#     },
+#     'Luna': {
+#         'likes': 12,
+#         'comments': 2,
+#         'rating': 1
+#     },
+#     'Rena': {
+#         'likes': 26,
+#         'comments': 7,
+#         'rating': 2
+#     }
+# }
+# list_ = [v['likes'] for k, v in dict_.items() if v['rating'] > 3]
+# print(sum(list_))
+
+
+
+
+# dict_ = {
+#     'Dasha': {
+#         'likes': 15,
+#         'comments': [
+#             {'id': 1, 'text': 'some text'},
+#             {'id': 2, 'text': 'some text'},
+#         ],
+#         'rating': 2
+#     },
+#     'Luna': {
+#         'likes': 12,
+#         'comments': [
+#             {'id': 1, 'text': 'some text'},
+#             {'id': 2, 'text': 'some text'},
+#             {'id': 3, 'text': 'some text'},
+#         ],
+#         'rating': 1
+#     },
+#     'Rena': {
+#         'likes': 26,
+#         'comments': [
+#             {'id': 1, 'text': 'some text'},
+#             {'id': 2, 'text': 'some text'},
+#             {'id': 3, 'text': 'some text'},
+#             {'id': 4, 'text': 'some text'},
+#             {'id': 5, 'text': 'some text'},
+#             {'id': 6, 'text': 'some text'},
+#         ],
+#         'rating': 2
+#     }
+# }
+
+# id_ = [c['id'] for k, v in dict_.items() for c in v ['comments'] if len(dict_[k]['comments']) > 3]
+# print(id_)
+
+
+set1 = {i for i in range(10)}
+set2 = {i for i in range(56, 66)}
+full_set = set1.union(set2)
+res = {i if len(i) < 20  else "Ваш объединенный сет полностью уникальный!" for i in full_set}
 

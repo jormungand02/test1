@@ -29,7 +29,7 @@ for elem in enumerated:
 # записывает в новую последовательность результат функции применив каждый элемент последовательности 
 # <map object at 0x7ff005c17c40>
 
-list_ = ['1sdf', '23', '3sad', '4a', ]
+list_ = ['1', '2', '3', '4', ]
 mapped = map(int, list_)
 print(mapped) # <map object at 0x7ff005c17c40>
 #print(list(mapped)) # [1, 2, 3, 4]
