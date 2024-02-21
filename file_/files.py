@@ -1,16 +1,16 @@
-'=============Module & package==============='
-# .py - module 
-# more modules - package 
+# '=============Module & package==============='
+# # .py - module 
+# # more modules - package 
 
-'=============File============'
-# open() - функция, которая открывает файл в определном режиме 
+# '=============File============'
+# # open() - функция, которая открывает файл в определном режиме 
 
-# r - read(только для чтения) (стоит по умолчанию)
-# w - write(только для записи, каждый раз файл очищается)
-# a - append (только для дозаписи, добаляется в конец)
-# x - созадет файл, но если он сушествует выйдте ошибка 
+# # r - read(только для чтения) (стоит по умолчанию)
+# # w - write(только для записи, каждый раз файл очищается)
+# # a - append (только для дозаписи, добаляется в конец)
+# # x - созадет файл, но если он сушествует выйдте ошибка 
 
-'--------------Read-----------------'
+# '--------------Read-----------------'
 # file = open('test1.txt', 'r')
 # file.close()
 # print(dir(file))
@@ -27,23 +27,31 @@
 # print(file.tell())
 # print(file.readlines())
 
-'read -> str, readline -> str, readlines:List[str]'
+# 'read -> str, readline -> str, readlines:List[str]'
 
 # print(file.tell())
 
 
-'====================Write===================='
+# '====================Write===================='
 # file = open('test1.txt', 'w')
 # file.write('Makers\nHELLO WORLD\n')
 # file.writelines(['hello world\n', 'makers\n'])
 # file.close() 
 
-'write(str) , writelines(List[str, str])'
+# 'write(str) , writelines(List[str, str])'
 
-'===================Append======================'
-# append(a) - добваляется в конец
+# '===================Append======================'
+# # append(a) - добваляется в конец
 
-file = open('test1.txt', 'a')
-file.write('py33\n')
-file.seek(0)
-file.write('py32\n')
+# file = open('test1.txt', 'a')
+# file.write('py33\n')
+# file.seek(0)
+# file.write('py32\n')
+
+# '===================Контекстный менеджер=================='
+# # with
+
+# with open('test1.txt', 'r') as file:
+#     print(file.read())
+
+# print(file.closed) # True - файл закрылся False - открыт
