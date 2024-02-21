@@ -251,8 +251,68 @@
 # print(id_)
 
 
-set1 = {i for i in range(10)}
-set2 = {i for i in range(56, 66)}
-full_set = set1.union(set2)
-res = {i if len(i) < 20  else "Ваш объединенный сет полностью уникальный!" for i in full_set}
 
+# set1 = {x for x in range(0, 10)} 
+# set2 = {a for a in range(8, 18)} 
+# full_set = set1.union(set2) 
+# if len(full_set) < 20: 
+#     print(f'В этом сете было {20-len(full_set)} повторения, его длина составляет {len(full_set)}') 
+# elif len(full_set) == 20: 
+#       print("Ваш объединенный сет полностью уникальный!")
+
+
+
+
+# try: 
+#     num1 = int(input('Enter: ')) 
+#     num2 = int(input('Enter: ')) 
+#     res = num1 + num2 
+# except ValueError: 
+#     print('Введите число!') 
+# else: 
+#     print(res)
+
+
+# dict_ = {'key1': 'value1', 'key2': 'value2'} 
+# try:
+#     print(dict_['key3'])
+# except KeyError:
+#     print('Нет такого ключа')
+# except:
+#     print('hello')
+
+
+
+# try:
+#     age = int(input())
+#     if age < 18:
+#         raise ValueError('Доступ запрещён')
+# except ValueError:
+#     print('Введён некорректный возраст')
+# else:
+#     print('Спасибо')
+# finally:
+#     print('До свидания!')
+
+
+
+
+# try:
+#     num1 = int(input())
+#     num2 = int(input())
+#     print(num1 / num2)
+# except Exception:
+#     print('Произошла ошибка!')
+# except Exception:
+#     print('Произошла ошибка!')
+
+
+
+try:
+    cash = int(input())
+    if cash < 0:
+        raise Exception('ValueError')
+except:
+    print('Сумма не может быть отрицательной!')
+else:
+    print(cash)
