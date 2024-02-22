@@ -308,11 +308,136 @@
 
 
 
-try:
-    cash = int(input())
-    if cash < 0:
-        raise Exception('ValueError')
-except:
-    print('Сумма не может быть отрицательной!')
-else:
-    print(cash)
+# try:
+#     cash = int(input())
+#     if cash < 0:
+#         raise Exception('ValueError')
+# except:
+#     print('Сумма не может быть отрицательной!')
+# else:
+#     print(cash)
+
+
+
+# list_ = [1, 2, 3]
+# try:
+#     print(list_.get('age'))
+# except Exception:
+#     ...
+# print(list_.get('age'))
+
+
+
+# string = 'hello'
+# num = 250
+# try:
+#     print(string + num)
+#     raise 'Unsupported option'
+# except TypeError:
+#     print('Unsupported option')
+
+
+# try:
+#     for i in range(0, 10):
+#         list_.append(i)
+# except NameError:
+#     print('name')
+
+# try:
+#     list_ = [1, 2, 3, 4]
+#     for i in range(0, len(list_) + 1):
+#         print(list_[i])
+# except IndexError:
+#     print('hello')
+
+
+
+
+# try:
+#     password = '2003010202'
+#     if len(password) < 6:
+#         raise ValueError
+# except TypeError:
+#     print('hello')
+
+
+
+# warehouse = [
+# ['1', '2', '3', '3'],
+# [1, 2],
+# [[1], [2], [3]],
+# [[1, 2, 3], [1, 2, 3, 4, 5], {'hello': 'world'}],
+# ]
+# for i in warehouse:
+#     if len(warehouse) > 10 or len(i) > 3:
+#         raise ValueError()
+
+
+
+
+# def to_fahrenheit(k:int) -> float: 
+#     assert k >= 0,'Холоднее абсолютного нуля!' 
+#     res=(k - 273.16) * 9 / 5 + 32 
+#     return res 
+# print(to_fahrenheit(34))
+
+
+# try:
+#     import lamabimgo
+# except ModuleNotFoundError:
+#     print('Такого модуля нет')
+
+
+
+# def filter_comment(comment: str, banlist=['bastard']) -> None: 
+#     comment_words = comment.lower().replace('.', '').replace('!', '').replace('?', '').replace(',', '').split() 
+#     for word in comment_words: 
+#         if word in banlist: 
+#             raise ValueError("Ваш комментарий отправлен на перепроверку, так как, возможно, содержит неблагоприятный контекст")
+# print(filter_comment('bastard'))
+
+
+
+# try:
+#     num = 100000000
+#     for i in range(0, num):
+#         print('Nope')
+# except KeyboardInterrupt:
+#     print('Nope')
+
+
+
+
+# def collect_all_possibles(list_: list, num: int) -> list:
+#     try:
+#         res = []
+#         res.append(list_ + num)
+#         res.append(list_ * num)
+#         res.append(list_ - num)
+#         res.append(list_ // num)
+#         res.append(list_ ** num)
+#         print(res)
+#     except TypeError:
+#         print(res)
+# print(collect_all_possibles([1,2,3], 2))
+
+   
+
+
+# def read_last(lines: int, filename: str):
+#     with open(filename, 'r') as file:
+#         data = file.readlines() 
+#     data.reverse()
+#     if lines >= len(data):
+#         for line in data:
+#             print(line.replace('\n', ''))
+#     else:
+#         count = 1
+#         for line in data:
+#             print(line.replace('\n', ''))
+#             if lines == count:
+#                 break
+#             count += 1
+
+# read_last(3, 'test1.txt')
+
