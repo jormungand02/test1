@@ -9,6 +9,5 @@
 #     a[0].update(['default value']) 
 #     a[1].update(['default value']) 
 #     a[2].update(['default value']) 
- 
-# print(a)
 
+# print(a)

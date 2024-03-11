@@ -32,7 +32,7 @@ for elem in enumerated:
 list_ = ['1', '2', '3', '4', ]
 mapped = map(int, list_)
 print(mapped) # <map object at 0x7ff005c17c40>
-#print(list(mapped)) # [1, 2, 3, 4]
+print(list(mapped)) # [1, 2, 3, 4]
 
 mapped2 = map(str.isdigit, list_)
 print(list(mapped2))

@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: brown;
+}
+
+.name_car{
+    font-size: 60px;
+    margin-left: 560px;
+    margin-top: 200px;
+    color:aliceblue;
+}
+img{
+    width: 1000px;
+    margin-left: 130px;
+}
+
+.nuv{
+    display: flex;
+    color: white;
+    margin: 20px;
+
+}
+
+.hp3{
+    margin-right: 10px;
+}

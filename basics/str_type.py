@@ -84,7 +84,7 @@ print(string.islower()) # makers -> True
 print(string.isupper()) # MAKERS -> True
 
 string = '124sfd4'
-print(string.isdigit()) # True - проверяет весь ли текст состоит из чисел
+print(string.isdigit()) # True - проверяет весь ли текст строки состоит из чисел
 print(string.isalpha()) # False - проверка на буквы в тексте
 print(string.isalnum()) # True - проверка на то что является ли строка с числами или с буквами или все вместе, но не символы
 string2 = 'hello.world.makers.bootcamp'
@@ -118,7 +118,6 @@ print(string[::4]) # 'hor'
 string = 'hello'
 string = string.upper() # hello -> HELLO
 print(string)
-
 
 
 
